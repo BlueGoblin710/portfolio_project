@@ -125,7 +125,12 @@ p {
 #contact-section .bi:hover {
   color: #0020ee;
 }
-
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
 /*Enable Hero Image Zoom Effect on Smaller Screens */
 @media (max-width: 576px) {
   #hero-section::before {

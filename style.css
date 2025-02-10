@@ -44,8 +44,8 @@ p {
 
 /* Add padding to the navbar-toggler */
 .navbar-toggler {
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
-  margin-right: -5px; /* Move the hamburger menu slightly to the left */
+  padding: 0.5rem 0.75rem; /* Adjust padding as needed */
+  margin-right: 0; /* Ensure it does not touch the right side */
 }
 
 /* Hero Section - Keep Image Size but Zoom on Smaller Screens */
@@ -166,4 +166,15 @@ p {
   #hero-section::before {
     transform: scale(1.2);
   }
+}
+
+/* Footer Section */
+#footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #09122C;
+  color: white;
+  padding: 1rem 0;
 }

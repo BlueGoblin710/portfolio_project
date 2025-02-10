@@ -177,4 +177,5 @@ p {
   background-color: #09122C;
   color: white;
   padding: 1rem 0;
+  width: 100%; /* Ensure footer spans full width */
 }

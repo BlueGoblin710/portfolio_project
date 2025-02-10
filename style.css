@@ -1,54 +1,43 @@
-/* Custom CSS to extend Bootstrap styles */
-@import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+/*Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap");
 
 /* Global Styles */
 body {
-  background-color: #09122C;
+  background-color: #09122c;
   color: white;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
 }
-
-/* Header Style */
-h1, h2 {
+/*Header Style */
+h1,
+h2 {
   font-family: "Wallpoet", serif;
   font-size: 2.8rem;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
-
 h5 {
   font-family: "Wallpoet", serif;
   font-size: 1.8rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
-
-/* Paragraph Style */
+/*Paragraph Style */
 p {
   font-family: "Coda", sans-serif;
   font-size: 1.5rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
-
-/* Nav Bar Style */
-.navbar-brand, .navbar-nav .nav-link {
-  font-family: 'Coda', sans-serif;
+/*Nav Bar Style*/
+.navbar-brand,
+.navbar-nav .nav-link {
+  font-family: "Coda", sans-serif;
   font-size: 2rem;
 }
-
 .navbar-brand i {
   font-size: 2rem;
 }
 
-/* Add padding to the navbar-toggler */
-.navbar-toggler {
-  padding: 0.5rem 1rem; /* Adjust padding as needed */
-  margin-right: -5px; /* Move the hamburger menu slightly to the left */
-}
-
-/* Hero Section - Keep Image Size but Zoom on Smaller Screens */
+/*Hero Section - Keep Image Size but Zoom on Smaller Screens */
 #hero-section {
   position: relative;
   width: 100%;
@@ -62,7 +51,7 @@ p {
   overflow: hidden;
 }
 
-/* Set Background Image & Enable Zoom Effect */
+/*Set Background Image & Enable Zoom Effect */
 #hero-section::before {
   content: "";
   position: absolute;
@@ -70,13 +59,13 @@ p {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: url('img/hero_img.jpg') no-repeat center center;
+  background: url("img/hero_img.jpg") no-repeat center center;
   background-size: cover;
   transition: transform 0.5s ease-in-out;
   z-index: -1;
 }
 
-/* Add Dark Overlay */
+/*Add Dark Overlay */
 #hero-section::after {
   content: "";
   position: absolute;
@@ -87,14 +76,13 @@ p {
   background: rgba(0, 0, 0, 0.533);
   z-index: -1;
 }
-
 /* Hero Content Style */
 .hero-content {
   position: relative;
   z-index: 2;
 }
 
-/* Hero Headshot Style */
+/* Hero Headshot Style*/
 .hero-headshot {
   width: 200px;
   height: 200px;
@@ -109,8 +97,7 @@ p {
   transform: scale(1.1);
   border-color: darkblue;
 }
-
-/* Skills Style */
+/*Skills Style */
 #skills-section {
   color: white;
 }
@@ -119,31 +106,27 @@ p {
   max-width: 180px;
   height: auto;
 }
-
-/* Carousel Style */
+/*Carousel Style*/
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 10px;
 }
-
 .carousel-inner img {
   max-height: 635px;
   width: auto;
   object-fit: contain;
 }
-
-/* Contact Style */
+/*Contact Style*/
 #contact-section .bi {
   color: #ffffff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
-
 #contact-section .bi:hover {
   color: #0020ee;
 }
 
-/* Enable Hero Image Zoom Effect on Smaller Screens */
+/*Enable Hero Image Zoom Effect on Smaller Screens */
 @media (max-width: 576px) {
   #hero-section::before {
     transform: scale(1.6);
@@ -155,58 +138,11 @@ p {
     font-size: 0.875rem;
   }
 }
-
-/* Ensure Hero Section spans full width on small screens */
-@media (max-width: 576px) {
-  #hero-section {
-    padding: 0; /* Remove padding to ensure full width */
-  }
-
-  #hero-section::before {
-    width: 100%; /* Ensure background image spans full width */
-  }
-}
-
-/* Ensure Footer spans full width on small screens */
-/* Ensure Hero Section spans full width on small screens */
-@media (max-width: 300px) {
-  #hero-section {
-    padding: 0; /* Remove padding to ensure full width */
-  }
-
-  #hero-section::before {
-    width: 100%; /* Ensure background image spans full width */
-  }
-}
-@media (max-width: 300px) {
-  #footer-section {
-    width: 100%; /* Ensure footer spans full width */
-    padding: 10px 0; /* Adjust padding for smaller screens */
-  }
-}
-/* Ensure Hero Section spans full width on small screens */
-@media (max-width: 576px) {
-  #hero-section {
-    padding: 0; /* Remove padding to ensure full width */
-  }
-
-  #hero-section::before {
-    width: 100%; /* Ensure background image spans full width */
-  }
-}
-@media (max-width: 576px) {
-  #footer-section {
-    width: 100%; /* Ensure footer spans full width */
-    padding: 10px 0; /* Adjust padding for smaller screens */
-  }
-}
-
 @media (max-width: 768px) {
   #hero-section::before {
     transform: scale(1.4);
   }
 }
-
 @media (max-width: 992px) {
   #hero-section::before {
     transform: scale(1.2);

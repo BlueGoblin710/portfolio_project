@@ -156,6 +156,51 @@ p {
   }
 }
 
+/* Ensure Hero Section spans full width on small screens */
+@media (max-width: 576px) {
+  #hero-section {
+    padding: 0; /* Remove padding to ensure full width */
+  }
+
+  #hero-section::before {
+    width: 100%; /* Ensure background image spans full width */
+  }
+}
+
+/* Ensure Footer spans full width on small screens */
+/* Ensure Hero Section spans full width on small screens */
+@media (max-width: 300px) {
+  #hero-section {
+    padding: 0; /* Remove padding to ensure full width */
+  }
+
+  #hero-section::before {
+    width: 100%; /* Ensure background image spans full width */
+  }
+}
+@media (max-width: 300px) {
+  #footer-section {
+    width: 100%; /* Ensure footer spans full width */
+    padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+}
+/* Ensure Hero Section spans full width on small screens */
+@media (max-width: 576px) {
+  #hero-section {
+    padding: 0; /* Remove padding to ensure full width */
+  }
+
+  #hero-section::before {
+    width: 100%; /* Ensure background image spans full width */
+  }
+}
+@media (max-width: 576px) {
+  #footer-section {
+    width: 100%; /* Ensure footer spans full width */
+    padding: 10px 0; /* Adjust padding for smaller screens */
+  }
+}
+
 @media (max-width: 768px) {
   #hero-section::before {
     transform: scale(1.4);

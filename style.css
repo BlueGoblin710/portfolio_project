@@ -1,4 +1,4 @@
-/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+/* You can add custom CSS and extend Bootstrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
 /*Google Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Wallpoet&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap");
@@ -8,6 +8,7 @@ body {
   background-color: #09122c;
   color: white;
 }
+
 /*Header Style */
 h1,
 h2 {
@@ -16,23 +17,27 @@ h2 {
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
+
 h5 {
   font-family: "Wallpoet", serif;
   font-size: 1.8rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
+
 /*Paragraph Style */
 p {
   font-family: "Coda", sans-serif;
   font-size: 1.5rem;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
+
 /*Nav Bar Style*/
 .navbar-brand,
 .navbar-nav .nav-link {
   font-family: "Coda", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
+
 .navbar-brand i {
   font-size: 2rem;
 }
@@ -76,6 +81,7 @@ p {
   background: rgba(0, 0, 0, 0.533);
   z-index: -1;
 }
+
 /* Hero Content Style */
 .hero-content {
   position: relative;
@@ -97,6 +103,7 @@ p {
   transform: scale(1.1);
   border-color: darkblue;
 }
+
 /*Skills Style */
 #skills-section {
   color: white;
@@ -106,50 +113,102 @@ p {
   max-width: 180px;
   height: auto;
 }
+
 /*Carousel Style*/
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0);
   color: white;
   padding: 10px;
 }
+
 .carousel-inner img {
   max-height: 635px;
   width: auto;
   object-fit: contain;
 }
+
 /*Contact Style*/
 #contact-section .bi {
   color: #ffffff;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 }
+
 #contact-section .bi:hover {
   color: #0020ee;
 }
+
 footer {
   background-color: #333;
   color: white;
   text-align: center;
   padding: 1em 0;
 }
+
 /*Enable Hero Image Zoom Effect on Smaller Screens */
 @media (max-width: 576px) {
   #hero-section::before {
     transform: scale(1.6);
   }
+
   .carousel-caption h5 {
     font-size: 1rem;
   }
+
   .carousel-caption p {
     font-size: 0.875rem;
   }
+
+  .hero-headshot {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
 }
+
 @media (max-width: 768px) {
   #hero-section::before {
     transform: scale(1.4);
   }
+
+  .hero-headshot {
+    width: 175px;
+    height: 175px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
 }
+
 @media (max-width: 992px) {
   #hero-section::before {
     transform: scale(1.2);
+  }
+
+  .hero-headshot {
+    width: 190px;
+    height: 190px;
+  }
+
+  h1,
+  h2 {
+    font-size: 2.6rem;
+  }
+
+  p {
+    font-size: 1.4rem;
   }
 }
